@@ -1,0 +1,61 @@
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  width: 20rem;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card_img,
+.card_img_top {
+  width: 100%;
+  height: 50%;
+  margin: 0 auto;
+  border-top-left-radius: calc(0.25rem - 2px);
+  border-top-right-radius: calc(0.25rem - 2px);
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem;
+  text-align: center;
+  height: 20rem;
+}
+
+.card_body p {
+  color: #8d8d8d;
+  font-size: 16px;
+  text-align: justify;
+}
+
+.card_title {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+
+.card_title :hover {
+  text-decoration: none;
+  color: #3c3c3c;
+}
+
+.card_subtitle {
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #5a5a5a;
+}

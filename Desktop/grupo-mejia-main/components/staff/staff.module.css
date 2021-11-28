@@ -1,0 +1,66 @@
+.staffContainer {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0.8rem 1.5rem rgb(0 0 0 / 25%);
+  margin-bottom: 1.5rem;
+}
+
+.staffCabecera {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.staffCabecera h2 {
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 0px;
+  margin-left: 2rem;
+  position: absolute;
+  top: 0;
+  background-color: #071845;
+  min-width: 25%;
+  max-width: 50%;
+  color: #ffffff;
+  padding: 5px 100px 5px 15px;
+}
+
+.staffContaint {
+  padding-bottom: 2.5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.staffContaint p {
+  font-weight: normal;
+  font-style: normal;
+  text-align: justify;
+}
+
+.staffContaint img {
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+.staffContaint a {
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: #071845;
+}
+
+@media (max-width: 768px) {
+  .staffContaint {
+    margin-top: 2rem;
+  }
+}

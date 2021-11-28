@@ -1,0 +1,174 @@
+.container {
+  margin: 0 auto;
+  margin-top: -10.5rem;
+  background-color: #ffffff;
+  height: auto;
+  width: 80%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Sección principal */
+
+.panel {
+  padding: 5% 10%;
+  display: table;
+  box-shadow: 2px 2px 5px #999;
+  margin-bottom: 5%;
+}
+
+.img {
+  display: table-cell;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.sized {
+  display: none;
+}
+
+.text {
+  display: table-cell;
+  width: 50%;
+  padding-left: 5%;
+  border-left: 1px solid #a2a2a2;
+}
+
+.text h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.text p {
+  text-align: justify;
+  font-style: normal;
+  font-size: 18px;
+}
+
+/* Sección de historia */
+
+.historia {
+  display: flex;
+  height: 100%;
+}
+
+.historiaText {
+  width: 50%;
+  padding: 5%;
+  vertical-align: top;
+  color: #ffffff;
+  background-color: #071845;
+}
+
+.historiaText h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.historiaText p {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.historiaImg {
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+/* Sección de marcas */
+
+.marcasSec {
+  margin-bottom: 5%;
+}
+
+.frase {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #ffffff;
+  padding: 2% 50% 2% 2%;
+  margin-bottom: 5%;
+}
+
+.frase h2 {
+  font-size: 2.375rem;
+}
+
+.brand__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 2rem 1.5rem;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand__image {
+  object-fit: contain;
+  max-width: 70%;
+}
+
+@media (max-width: 768px) {
+  .panel {
+    padding: 10% 13%;
+    display: table;
+    box-shadow: 2px 2px 5px #999;
+    margin-bottom: 10%;
+  }
+
+  .img {
+    display: table-row;
+    width: 100%;
+    vertical-align: top;
+  }
+
+  .img img {
+    width: 100%;
+  }
+
+  .text {
+    display: table-row;
+    width: 100%;
+    border-left: 0px solid #a2a2a2;
+  }
+  .sized {
+    display: flex;
+    height: 25px;
+  }
+
+  .historia {
+    display: table;
+    padding: 10%;
+    background-color: #071845;
+  }
+
+  .historiaText {
+    display: table-row;
+    height: 50%;
+    color: #ffffff;
+  }
+
+  .historiaText p {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .historiaImg {
+    display: none;
+    position: relative;
+  }
+
+  .frase {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #ffffff;
+    padding: 2%;
+    margin-bottom: 5%;
+  }
+
+  .frase h2 {
+    font-size: 25px;
+  }
+}

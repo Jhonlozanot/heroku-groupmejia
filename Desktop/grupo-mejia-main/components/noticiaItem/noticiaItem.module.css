@@ -1,0 +1,165 @@
+.noticia_main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  position: relative;
+  margin-bottom: 5%;
+}
+.noticia_main img {
+  width: 100%;
+  max-height: 50rem;
+}
+.box {
+  position: absolute;
+  bottom: 0;
+}
+
+.title {
+  background-color: rgba(7, 18, 45, 0.8);
+  color: white;
+  padding: 2%;
+}
+
+.title h2 {
+  font-weight: bold;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.title p {
+  font-style: normal;
+  text-align: right;
+  margin: 0;
+}
+
+.subtitle {
+  background-color: #3c3c3c;
+  color: white;
+  padding: 1%;
+  vertical-align: middle;
+}
+
+.subtitle p {
+  margin: 0;
+}
+
+.desc {
+  background-color: #071845;
+  padding: 2%;
+}
+
+.desc p {
+  color: white;
+  margin: 0;
+  text-align: justify;
+}
+
+.noticias {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  height: auto;
+  justify-content: space-between;
+  position: relative;
+}
+
+.izquierdo,
+.derecho {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.izquierdo {
+  width: 65%;
+  text-align: justify;
+}
+
+.derecho {
+  width: 30%;
+}
+
+.child_derecho {
+  padding: 1rem;
+  height: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  box-shadow: 0px 0.8rem 1.5rem rgb(0 0 0 / 25%);
+}
+
+.child_derecho a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.child_derecho_content {
+  display: flex;
+  align-items: center;
+}
+.child_derecho_content img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.child_derecho_content {
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+.linea {
+  width: 100%;
+  height: 2px;
+  align-self: center;
+  background-color: #5a5a5a;
+  margin-bottom: 5px;
+  padding: 0 1rem;
+}
+@media (max-width: 768px) {
+  .noticia_main {
+    width: 100%;
+    height: 50vh;
+    margin-bottom: 90%;
+  }
+
+  .box {
+    height: 100%;
+    position: relative;
+  }
+
+  .title h2 {
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+  }
+
+  .title p {
+    font-style: normal;
+    text-align: right;
+  }
+
+  .izquierdo {
+    width: 100%;
+  }
+
+  .derecho {
+    width: 100%;
+  }
+  .child_izquierdo {
+    flex-direction: column;
+  }
+  .child_izquierdo img {
+    width: 100%;
+  }
+  .child_izquierdo .text {
+    padding: 1rem;
+  }
+  .child_derecho {
+    margin-left: 0;
+    margin-bottom: 1rem;
+  }
+
+  .noticias {
+    flex-direction: column;
+  }
+}

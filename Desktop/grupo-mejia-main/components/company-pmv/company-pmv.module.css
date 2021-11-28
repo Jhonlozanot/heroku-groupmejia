@@ -1,0 +1,72 @@
+.companypmv {
+  width: 100%;
+  display: flex;
+  padding: 30px;
+  height: auto;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  background-color: #ffffff;
+  margin-top: -6rem;
+  box-shadow: 0px 0.8rem 1.5rem rgb(0 0 0 / 25%);
+}
+.linea {
+  width: 1px;
+  height: 20rem;
+  align-self: center;
+  background-color: #5a5a5a;
+}
+.companypmv__item {
+  background-color: #ffffff;
+  height: auto;
+  width: calc(100% / 3);
+
+  padding: 2rem;
+  text-align: center;
+}
+.companypmv__item h2 {
+  color: #5a5a5a;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.companypmv__item p {
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
+  font-size: 18px;
+}
+
+.companypmv__item img {
+  width: 6rem;
+  height: 6rem;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+}
+@media (max-width: 600px) {
+  .companypmv {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .linea {
+    display: none;
+  }
+  .companypmv__item {
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  .companypmv__item h2 {
+    margin: 0;
+  }
+
+  .companypmv__item p {
+    text-align: justify;
+    padding: 0 1rem;
+  }
+  .companypmv__item img {
+    text-align: justify;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 0.5rem;
+  }
+}

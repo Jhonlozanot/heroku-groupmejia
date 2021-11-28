@@ -1,0 +1,48 @@
+.companyInfo {
+  display: flex;
+  width: 100%;
+  height: 20rem;
+  margin-bottom: 3rem;
+}
+.companyInfo__resenia {
+  width: 60%;
+  padding: 3rem;
+  background-color: #071845;
+  color: #ffffff;
+}
+
+.companyInfo__resenia h2 {
+  font-weight: bold;
+  font-style: normal;
+}
+
+.companyInfo__resenia p {
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+.companyInfo img {
+  width: 40%;
+}
+@media (min-width: 600px) and (max-width: 800px) {
+}
+@media (max-width: 600px) {
+  .companyInfo {
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .companyInfo__resenia {
+    width: 100%;
+    padding: 1rem;
+  }
+  .companyInfo__resenia h2 {
+    text-align: center;
+  }
+  .companyInfo__resenia p {
+    text-align: justify;
+  }
+  .companyInfo img {
+    width: 100%;
+  }
+}

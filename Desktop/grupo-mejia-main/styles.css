@@ -1,0 +1,181 @@
+:root {
+  --main-clr: #f0f0f0;
+  --header-height: 6rem;
+  --white: #ffffff;
+  --gray-clr: #5a5a5a;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+menu {
+  height: var(--header-height);
+  margin: 0;
+}
+
+main {
+  height: calc(100vh - var(--header-height));
+}
+
+.menu-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  align-items: center;
+  box-shadow: 2px 2px 5px #999;
+}
+
+.menu-nav .logo {
+  width: 10%;
+  height: auto;
+}
+
+.menu-nav img {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  padding-left: 0;
+  padding-inline-start: 0;
+}
+
+.links a {
+  text-decoration: none;
+  color: black;
+  margin-right: 4rem;
+}
+.links a:last-of-type {
+  margin-right: 1rem;
+}
+
+.menu-nav button {
+  background: none;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.menu-nav button span {
+  display: block;
+  border-radius: 50px;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+  transition: width 0.4s ease-in-out;
+}
+
+.loading {
+  display: none;
+}
+
+/* Swiper Styles */
+.swiper-container {
+  padding: 1.5rem 0 !important;
+}
+.swiper-pagination.swiper-pagination-bullets {
+  bottom: 0 !important;
+}
+.swiper-pagination.swiper-pagination-bullets > .swiper-pagination-bullet {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+}
+.swiper-pagination.swiper-pagination-bullets
+  > .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #071845;
+}
+
+/* Animaciones */
+
+.animated {
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.fast {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+/* Media Querys */
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 5rem;
+  }
+  .menu-nav .links {
+    display: none;
+  }
+
+  .menu-nav .logo {
+    width: 25%;
+    margin-left: -1rem;
+  }
+
+  .menu-nav img {
+    height: 100%;
+  }
+
+  .carga {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .carga .carga-img {
+    width: 100%;
+    height: 30%;
+  }
+
+  .menu-nav .log {
+    width: 8%;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-nav button {
+    display: none;
+  }
+
+  .carga {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .carga .carga-img {
+    width: 95%;
+    height: 95%;
+  }
+}

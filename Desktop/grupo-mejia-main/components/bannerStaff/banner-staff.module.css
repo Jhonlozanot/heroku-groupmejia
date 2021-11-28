@@ -1,0 +1,59 @@
+.banner {
+  background-image: url("../../public/static/png/staff.png");
+
+  /* Set a specific height */
+  height: 80%;
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+}
+
+.bannerTitulo {
+  /* width: 335px; */
+ /*height: 65%;*/
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(7, 24, 69, 0.5);
+  text-align: justify;
+  padding: 0 15% 0 50%;
+}
+
+.bannerTituloText {
+  color: white;
+  font-size: 58px;
+  font-weight: bold;
+  margin: 0;
+  text-align: start;
+}
+
+.bannerTituloTextDesc {
+  color: white;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .bannerTitulo {
+    /* width: 335px; */
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(7, 24, 69, 0.5);
+    text-align: justify;
+    padding: 5% 15% 0 15%;
+  }
+
+  .bannerTituloText {
+    font-size: 25px;
+  }
+
+  .bannerTituloTextDesc {
+    font-size: 16px;
+  }
+}

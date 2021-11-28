@@ -1,0 +1,143 @@
+.footer {
+  margin-top:190px;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 2rem;
+}
+.footer__icons {
+  display: flex;
+}
+.footer__icons a {
+  display: inherit;
+  align-items: center;
+  width: 1.875rem;
+  margin-right: 1rem;
+}
+.footer__icons a:not(a:last-child) {
+  margin-right: 2rem;
+}
+.footer__icons img {
+  width: 100%;
+  object-fit: cover;
+}
+.footer__information {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 80%;
+  height: 4.3rem;
+  font-size: 0.8rem;
+}
+.footer__information .footer_line {
+  width: 1px;
+  height: 90%;
+  background-color: #ffffff;
+}
+
+.footerLema {
+  height: auto;
+  margin: 1rem 0;
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footerLema img {
+  width: 60px;
+  height: 50px;
+}
+.footerLema p {
+  font-style: italic;
+  font-size: 15px;
+  text-align: justify;
+  width: 60%;
+}
+
+.footerTextos {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 2rem;
+}
+
+.footerText {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.footerText p {
+  width: 100%;
+  font-style: normal;
+  margin: 0;
+}
+.footerText img {
+  width: 16px;
+  margin-right: 10px;
+}
+
+/* 1024px */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3rem 1.2rem;
+  }
+  .footer__icons {
+    margin-bottom: 2rem;
+  }
+  .footer__information {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer__information .footer_line:first-of-type {
+    display: none;
+  }
+
+  .footerLema {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem 0;
+  }
+
+  .footerTextos {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    margin: 0.5rem 0;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footerText {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .footerText p {
+    width: 100% !important;
+    margin: 0;
+  }
+  .footerText img {
+    width: 16px;
+    margin-right: 10px;
+  }
+
+  .footer__information p {
+    text-align: justify;
+    font-size: 14px;
+    width: 100%;
+  }
+}

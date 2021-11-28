@@ -1,0 +1,12 @@
+.imge img {
+  width: 100%;
+  height: 40rem;
+  position: absolute;
+  z-index: 0;
+  top: 170rem;
+}
+@media (max-width: 600px) {
+  .imge img {
+    top: 220rem;
+  }
+}

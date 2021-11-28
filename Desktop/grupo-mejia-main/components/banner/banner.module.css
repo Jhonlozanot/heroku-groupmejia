@@ -1,0 +1,45 @@
+.banner {
+  /* Set a specific height */
+  height: 80%;
+  width: 100%;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  padding: 0;
+}
+
+.video {
+  width: 100%;
+  top: 0;
+  position: absolute;
+}
+
+.bannerText {
+  text-align: center;
+  color: white;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: bold;
+  position: absolute;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 45%;
+    align-items: flex-start;
+  }
+
+  .video {
+    top: 0;
+  }
+
+  .bannerText {
+    font-size: 30px;
+  }
+}

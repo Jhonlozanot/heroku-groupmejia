@@ -1,0 +1,150 @@
+.contenedor__contacto {
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+.contenedor__formulario {
+  width: 50%;
+  height: auto;
+  padding: 3rem;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("../../public/static/png/ciudad-contacto.png");
+}
+
+.formulario {
+  margin: 2rem;
+}
+.formulario h1 {
+  font-size: 30px;
+}
+
+.formulario__content {
+  display: flex;
+  flex-direction: column;
+  color: #8e8e8e;
+  font-size: 18px;
+  padding: 0 2rem;
+}
+
+.formulario__content button {
+  width: 40%;
+  line-height: 30px;
+  background-color: #171d35;
+  color: white;
+  font-weight: normal;
+  font-size: 20px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.formulario__column {
+  display: flex;
+  flex-direction: row;
+}
+.formulario__row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+.formulario__row2 {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+  margin-right: 1rem;
+}
+.formulario__row input,
+.formulario__row2 input {
+  line-height: 2rem;
+  padding-left: 1rem;
+  font-size: 15px;
+}
+.formulario__row input,
+.formulario__row2 input,
+.formulario__row textarea {
+  border: 1px #bdbdbd solid;
+  padding-left: 1rem;
+}
+
+.formulario__row textarea {
+  height: 10rem;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  padding-top: 0.5rem;
+}
+
+.formulario__row label {
+  margin: 0.5rem 0;
+}
+
+.formulario__row2 label {
+  margin: 0.5rem 0;
+}
+
+.formulario__content ::placeholder {
+  color: #bdbdbd;
+}
+.contenedor__mapa {
+  background: linear-gradient(0deg, #031138 0%, #163076 92.88%);
+  width: 50%;
+  height: auto;
+  position: relative;
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .contenedor__contacto {
+    flex-direction: column;
+  }
+  .contenedor__formulario {
+    width: 100%;
+    padding: 0;
+  }
+  .contenedor__mapa {
+    background-color: #06153d;
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 600px) {
+  .contenedor__mapa {
+    display: none;
+  }
+  .contenedor__formulario {
+    width: 100%;
+    padding: 0;
+  }
+  .formulario__column {
+    flex-direction: column;
+  }
+  .formulario__content button {
+    width: 50%;
+    text-align: center;
+    align-self: center;
+    font-size: 17px;
+  }
+}
+
+.mapa {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mapa p {
+  background-color: black;
+  line-height: 30px;
+  margin-top: 0;
+  color: white;
+  width: 605px;
+  z-index: 1;
+  padding-left: 10px;
+}
+
+.formulario__captcha {
+  margin-top: 1rem;
+}
