@@ -30,6 +30,8 @@ function Footer() {
 
         <div className={style.footerTextos}>
           <div className={style.footerText}>
+            <p>Póliticas de Privacidad</p>
+            <p>Póliticas de Cookies</p>
             <img src="static/svg/locacion.svg" alt="" />
             <p>Calle las Camelias 820 of 401, San Isidro, Lima.</p>
           </div>
